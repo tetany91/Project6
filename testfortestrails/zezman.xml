@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Zezman</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Проверка валидации номера</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Зайти на сайт  https://zezman.ua/
+Ввести корректный номер </steps>
+										<expected>Валидация номера присутствует </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Проверка ввода корректных данных имени</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>Зайти на сайт https://zezman.ua/
+Ввести корректные данные </steps>
+										<expected>Валидация успешна </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Проверка наличия и отображения контактной информации</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Зайти на сайт https://zezman.ua/</preconds>
+										<steps>1) Перейти к разделу Связаться с нами 
+2) Проверить  наличие информации о контактных данных, таких как электронная почта, номер телефона, адрес</steps>
+										<expected>Контактная информация отображается правильно. </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Проверка работоспособности ссылки Инстаграм</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1)Зайти на сайт  https://zezman.ua/
+2) Нажать на ссылку Инстаграм </steps>
+										<expected>Ссылка Инстаграм работает </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>Проверка работоспособности ссылки Facebook</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт https://zezman.ua/
+2) Нажать на ссылку Facebook</steps>
+										<expected>Ссылка  Facebook активна </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Проверка рабоспособности ссылки linkedin</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт  https://zezman.ua/
+2) Нажать на ссылку linkedin</steps>
+										<expected>Ссылка linkedin активна </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>Проверка реакции на запрос</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1)Зайти на сайт
+2) Заполнить форму 
+3) Отправить  
+</steps>
+										<expected>Администраторы сайта дали обратную связь  </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Проверка ввода некорректных данных в поле электронной почты</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт  https://zezman.ua/
+2) В поле ввода электронной почты вводим эмайл без @
+3) Нажимаем отправить </steps>
+										<expected>Выбивает ошибку вводимых данных</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Проверка обработки ошибок с пустыми полями ввода данных</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт https://zezman.ua/
+2) Не заполнять поля 
+3) Нажать отправить </steps>
+										<expected>Система предупреждает о обязательных полях</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Проверка ограничений на количество символов в поле сообщения</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт  https://zezman.ua/
+2) Ввести очень длинное сообщение в поле &quot;Сообщение&quot;, превышающее ограничение на количество символов.
+3) Заполнить остальные обязательные поля.
+4) Нажать кнопку &quot;Отправить&quot;.</steps>
+										<expected>Появляется сообщение об ошибке, указывающее на превышение ограничения на количество символов в поле сообщения.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>Проверка времени ответа на отправленное сообщение</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1)Зайти на сайт https://zezman.ua/
+2) Заполнить все обязательные поля формы.
+3) Нажать кнопку &quot;Отправить&quot;.</steps>
+										<expected>Команда поддержки должна оперативно ответить на отправленное сообщение в течение определенного времени (например, в течение 24 часов). Можно проверить, получив ли ответ по электронной почте или в другом предусмотренном способе.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Проверка прикрепления файла</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт https://zezman.ua/
+2) Заполнить все обязательные поля формы.
+3) Прикрепить файл (например, изображения, документы) к сообщению.
+4) Нажать отправить </steps>
+										<expected> Файл прикрепляется и отправляется </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Проверка сброса полей формы после отправки сообщения</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>180</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт https://zezman.ua/
+2) Заполнить все обязательные поля формы.
+3)Нажать кнопку &quot;Отправить&quot;.</steps>
+										<expected>Поля пустые после отправки сообщения </expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>Проверка ввода некорректного номера телефона</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate>120</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) зайти на сайт https://zezman.ua/
+2)В поле номера телефона ввести некорректный номер (например, &quot;12345&quot; или &quot;abcde&quot;).
+3) Заполнить форму далее
+4) Нажать отправить  </steps>
+										<expected>Система должна распознать некорректный номер телефона и не позволить отправить сообщение. Пользователю должно быть показано сообщение об ошибке в номере телефона.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>Проверка рабоспосбности мобильного телефона</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1) Зайти на сайт https://zezman.ua/
+2) Позвонить по задданому номеру </steps>
+										<expected> Телефонный номер активный , операторы отвечают </expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
